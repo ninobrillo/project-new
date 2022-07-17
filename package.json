@@ -1,5 +1,5 @@
 {
-  "homepage": "http://mywebsite.com/relativepath",
+  "homepage": "https://ninobrillo.github.io/project-new/",
   "name": "project-new",
   "version": "0.1.0",
   "private": true,
@@ -16,10 +16,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predelpoy":  "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
     "webpack": "^5.73.0"
